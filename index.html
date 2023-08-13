@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/grid.css">
+    <link rel="stylesheet" href="/assets/css.css">
+    <link rel="stylesheet" href="/assets/reponsive.css">
+</head>
+
+<body>
+    <div class="player">
+        <div class="dashboard">
+            <div class="left">
+                <div class="left-content">
+                    <div class="title">
+                        <div class="title-thumb">
+                            <img src="/assets/img/lofi-girl-making-beat.jpg" alt="" width="300px" height="300px">
+                        </div>
+                    </div>
+                    <!-- Header -->
+                    <header class="header">
+                        <h4>Chill Một Chút</h4>
+                        <h2>Cập nhật 20/7/2023</h2>
+                    </header>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="right-playlist">
+                    <div class="playlist-title">
+                        <p>BÀI HÁT</p>
+                        <p>THỜI GIAN</p>
+                    </div>
+                    <!-- DS nhac -->
+                    <div class="playlist">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="control-music">
+            <!-- Control/ CD -->
+            <div class="cd control-left">
+                <div class="control-playlist">
+                    <div class="control-thumb" style="background-image: url(./assets/img/JS.jpg); border-radius: 50%;">
+                    </div>
+                    <header class="control-body">
+                        <h3></h3>
+                        <p class="author"></p>
+                    </header>
+                </div>
+            </div>
+            <div class="control-right">
+                <div class="control-btn">
+                    <div class="btn btn-repeat">
+                        <i class="fas fa-redo"></i>
+                    </div>
+                    <div class="btn btn-prev">
+                        <i class="fas fa-step-backward"></i>
+                    </div>
+                    <div class="btn btn-toggle-play">
+                        <i class="fas fa-pause icon-pause"></i>
+                        <i class="fas fa-play icon-play"></i>
+                    </div>
+                    <div class="btn btn-next">
+                        <i class="fas fa-step-forward"></i>
+                    </div>
+                    <div class="btn btn-random">
+                        <i class="fas fa-random"></i>
+                    </div>
+                </div>
+                <div class="control-btn__audio">
+                    <input type="range" value="0" step="1" min="0" max="100" class="progress">
+                    <audio src="" id="audio"></audio>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/assets/js.js"></script>
+
+</html>

@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 1s ease;
+}
+
+.title:hover .title-thumb {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: transform 1s ease;
+    transform: scale(1.1);
+}
+
+html {
+    /* background-color: #170F23; */
+    background-color: aliceblue;
+}
+
+img {
+    border-radius: 10px;
+}
+
+/*  */
+.player .icon-pause {
+    display: none;
+}
+
+.playing .icon-pause {
+    display: block;
+}
+
+.playing .icon-play {
+    display: none;
+}
+
+/*  */
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 100px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.left .left-content {
+    position: fixed;
+}
+
+.header {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.header h4 {
+    margin-left: 50px;
+    line-height: 2;
+}
+
+.right {
+    width: 73%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-playlist {
+    width: 90%;
+    margin-top: -32px;
+}
+
+.playlist-title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    line-height: 2;
+}
+
+.song {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.song:active {
+    opacity: 0.8;
+}
+
+.song-playlist {
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.playlist .song:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.body {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.control-music {
+    width: 100%;
+    height: 110px;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    flex-direction: row;
+    flex-wrap: wrap;
+    bottom: 0;
+    left: 0;
+    /* border-top: 1px solid hsla(0,0%,100%,0.1); */
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.control-playlist {
+    display: flex;
+    align-items: center;
+}
+
+.control-body {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.control-left {
+    width: 45%;
+}
+
+.control-right {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.control-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+}
+
+.control-btn__audio {
+    height: 10px;
+}
+
+.btn i {
+    font-size: 28px;
+    padding: 10px 20px;
+}
+
+.btn:hover i {
+    cursor: pointer;
+    background-color: antiquewhite;
+    border-radius: 30%;
+}
+
+.control-thumb {
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.progress {
+    width: 60%;
+    height: 8px;
+    display: flex;
+    margin: 10px auto auto auto;
+    -webkit-appearance: none;
+    background: white;
+    outline: none;
+    -webkit-transition: 0.2s;
+    /* transition: opacity 0.2s; */
+}
+
+.progress::-webkit-slider-thumb {
+    /* -webkit-appearance: none; */
+    appearance: none;
+    width: 15px;
+    height: 8px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.progress:hover {
+    cursor: pointer;
+}
+
+.active {
+    color: blue;
+}

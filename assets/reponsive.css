@@ -1,0 +1,208 @@
+/* Mobile: 0 - 739px => grid width = 100% - hiển thị toàn màn hình. */
+/* Mobile */
+@media (max-width: 739px) {
+    .grid {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+        margin-top: 50px;
+        margin-right: -30px;
+        margin-bottom: 70px;
+    }
+
+    .left .left-content {
+        position: relative;
+    }
+
+    .dashboard {
+        display: flex;
+        justify-content: center;
+        padding: 50px 0;
+    }
+
+
+    .control-music {
+        height: 70px;
+    }
+
+    .control-left {
+        margin-left: -5px;
+        width: 45%;
+        margin-top: -5px;
+    }
+
+    .control-body {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    .control-right {
+        width: 50%;
+        margin-left: 80px;
+        margin-top: -60px;
+    }
+
+    .control-thumb {
+        width: 50px;
+        height: 50px;
+    }
+
+    .control-btn {
+       margin-left: 50%;
+    }
+
+    .btn i {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+
+    .progress {
+        margin: 4px auto auto 108px;
+        min-width: 185px;
+        border-radius: 5px;
+    }
+}
+
+/* Tablet: 740px - 1023px => grid width = 644px. */
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .grid {
+        width: 644px;
+    }
+
+    .right {
+        width: 100%;
+        margin-top: 50px;
+        margin-right: -70px;
+        margin-bottom: 70px;
+    }
+
+    .left .left-content {
+        position: relative;
+    }
+
+    .dashboard {
+        display: flex;
+        justify-content: center;
+        padding: 50px 0;
+    }
+
+    .progress {
+        margin: 10px auto auto 102px;
+    }
+
+    /*  */
+    .control-music {
+        height: 80px;
+        padding: 0 10px;
+    }
+
+    .btn i {
+        font-size: 24px;
+    }
+
+    .control-btn__audio {
+        height: 25px;
+    }
+
+    .control-thumb {
+        width: 60px;
+        height: 60px;
+        animation: thumb linear .8s;
+    }
+
+    @keyframes thumb {
+        from {
+            width: 70px;
+            height: 70px;
+        }
+
+        to {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    .control-body {
+        font-size: 15px;
+    }
+}
+
+/* PC độ phân giải thấp: 1024px - 1239px = 984px. */
+/* PC - low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .grid {
+        width: 984px;
+    }
+
+    .left .left-content {
+        margin-left: -24px;
+    }
+
+    .title-thumb img {
+        animation: fadeIn linear .8s;
+        width: 245px;
+        height: 245px;
+    }
+
+    .header {
+        margin-left: 25px;
+    }
+
+    @keyframes fadeIn {
+        from {
+            width: 300px;
+            height: 300px;
+        }
+
+        to {
+            width: 245px;
+            height: 245px;
+        }
+    }
+
+    .control-music {
+        height: 80px;
+        padding: 0 10px;
+    }
+
+    .btn i {
+        font-size: 24px;
+    }
+
+    .control-btn__audio {
+        height: 25px;
+    }
+
+    .control-thumb {
+        width: 70px;
+        height: 70px;
+        animation: thumb linear .8s;
+    }
+
+    @keyframes thumb {
+        from {
+            width: 80px;
+            height: 80px;
+        }
+
+        to {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    .control-body {
+        font-size: 15px;
+    }
+}
+
+/* PC độ phân giải cao (dạng mặc định khi chưa tiến hành responsive): 1240px - 1600px = 1440px. */
+/* PC - modern resolution */
+@media (min-width: 1240px) {
+    .grid {
+        width: 1440px;
+    }
+}
