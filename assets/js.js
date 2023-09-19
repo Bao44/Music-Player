@@ -134,7 +134,7 @@ const app = {
             const seekTime = audio.duration / 100 * e.target.value
             audio.currentTime = seekTime
         }
-
+        
         // Khi next song
         nextBtn.onclick = function () {
             if (_this.isRandom) {
@@ -162,12 +162,22 @@ const app = {
         randomBtn.onclick = function (e) {
             _this.isRandom = !_this.isRandom
             randomBtn.classList.toggle('active', _this.isRandom)
+            if (_this.isRandom) {
+                $('.fa-random').style.color = "#9B4DE0";
+            } else {
+                $('.fa-random').style.color = "#8B8791";
+            }
         }
 
         // Lặp lại bài hát
         repeatBtn.onclick = function (e) {
             _this.isRepeat = !_this.isRepeat
             repeatBtn.classList.toggle('active', _this.isRepeat)
+            if (_this.isRepeat) {
+                $('.fa-redo').style.color = "#9B4DE0";
+            } else {
+                $('.fa-redo').style.color = "#8B8791";
+            }
         }
 
         // Xử lí next song khi audio ended
@@ -183,9 +193,9 @@ const app = {
         playlist.onclick = function (e) {
             // Xử lí khi click vào song
             const songNode = e.target.closest('.song:not(.active)')
-            if(songNode || e.target.closest('.option')) {
-                
-                if(songNode) {
+            if (songNode || e.target.closest('.option')) {
+
+                if (songNode) {
                     _this.currentIndex = Number(songNode.dataset.index)
                     _this.loadCurrenSong()
                     _this.render()
