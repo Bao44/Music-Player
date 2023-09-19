@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     transition: all 1s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #fff;
 }
 
 .title:hover img {
@@ -21,11 +24,6 @@ img {
     margin-left: 10px;
 }
 
-.option {
-    margin-right: 10px;
-    color: #8B8791;
-}
-
 /*  */
 .player .icon-pause {
     display: none;
@@ -36,6 +34,18 @@ img {
 }
 
 .playing .icon-play {
+    display: none;
+}
+
+.player .button__pause {
+    display: none;
+}
+
+.playing .button__pause {
+    display: block;
+}
+
+.playing .button__play {
     display: none;
 }
 
@@ -55,14 +65,43 @@ img {
 }
 
 .header {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 50px;
-    color: #8B8791;
+    color: white;
+}
+
+.header .button__pause,
+.header .button__play {
+    margin-top: 20px;
+    margin-left: 35px;
+    width: 160px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    background-color: #9B4DE0;
+    border-radius: 12px;
+    border: 1px solid #9B4DE0;
+}
+
+.header .button__pause i,
+.header .button__play i{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.header .button__pause:hover,
+.header .button__play:hover {
+    cursor: pointer;
 }
 
 .header h4 {
     margin-left: 50px;
     line-height: 2;
+}
+
+.header h2 {
+    margin-left: 20px;
 }
 
 .right {
@@ -106,6 +145,11 @@ img {
 .playlist .song:hover {
     cursor: pointer;
     background-color: #2F2739;
+}
+
+.times {
+    margin-top: 20px;
+    margin-right: 10px;
 }
 
 .body {

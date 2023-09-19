@@ -6,6 +6,7 @@ const sin = $('.author')
 const cdThumb = $('.control-thumb')
 const audio = $('#audio')
 const playBtn = $('.btn-toggle-play')
+const playBtn_header = $('.btn__button')
 const player = $('.player')
 const progress = $('.progress')
 const nextBtn = $('.btn-next')
@@ -25,37 +26,44 @@ const app = {
             name: 'Em của ngày hôm qua',
             singer: 'MTP',
             path: '../assets/music/EmCuaNgayHomQua-SonTungMTP-2882720.mp3',
-            image: '../assets/img/son-tung-mtp.jpg'
+            image: '../assets/img/son-tung-mtp.jpg',
+            time: '03:45'
         },
         {
             name: 'FLOWER',
             singer: 'Jisoo',
             path: '../assets/music/Flower-JISOO-8949069.mp3',
-            image: '../assets/img/JS.jpg'
+            image: '../assets/img/JS.jpg',
+            time: '02:54'
         },
         {
             name: 'Không thể say',
             singer: 'HIEUTHUHAI',
             path: '../assets/music/KhongTheSay-HIEUTHUHAI-9293024.mp3',
-            image: '../assets/img/KTS.jpg'
+            image: '../assets/img/KTS.jpg',
+            time: '03:48'
+
         },
         {
             name: 'LikeCrary',
             singer: 'Jimin',
             path: '../assets/music/LikeCrazy-JiminBTS-8899920.mp3',
-            image: '../assets/img/jm.webp'
+            image: '../assets/img/jm.webp',
+            time: '03:32'
         },
         {
             name: 'ShutDown',
             singer: 'BlackPink',
             path: '../assets/music/ShutDown-BLACKPINK-7887142.mp3',
-            image: '../assets/img/lb.jpg'
+            image: '../assets/img/lb.jpg',
+            time: '02:55'
         },
         {
             name: 'Gone',
             singer: 'Rosé',
             path: '../assets/music/Gone-ROSE-6964052.mp3',
-            image: '../assets/img/ro.jpg'
+            image: '../assets/img/ro.jpg',
+            time: '03:27'
         }
     ],
     render: function () {
@@ -71,8 +79,8 @@ const app = {
                             <p class="author">${song.singer}</p>
                         </div>
                     </div>
-                    <div class="option">
-                        <i class="fas fa-ellipsis-h"></i>
+                    <div class="times">
+                        <p>${song.time}</p>
                     </div>
                 </div>
             `
@@ -100,6 +108,14 @@ const app = {
 
         // Xử lí khi click play
         playBtn.onclick = function () {
+            if (_this.isPlaying) {
+                audio.pause()
+            } else {
+                audio.play()
+            }
+        }
+
+        playBtn_header.onclick = function () {
             if (_this.isPlaying) {
                 audio.pause()
             } else {
