@@ -19,49 +19,36 @@
     .dashboard {
         display: flex;
         justify-content: center;
-        padding: 50px 0;
     }
 
-
     .control-music {
-        height: 70px;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
     }
 
     .control-left {
-        margin-left: -5px;
-        width: 45%;
-        margin-top: -5px;
-    }
-
-    .control-body {
-        font-size: 10px;
-        margin-left: 5px;
+        margin-left: -50px;
     }
 
     .control-right {
-        width: 50%;
-        margin-left: 80px;
-        margin-top: -60px;
-    }
-
-    .control-thumb {
-        width: 50px;
-        height: 50px;
-    }
-
-    .control-btn {
-       margin-left: 50%;
+        margin-left: -160px;
     }
 
     .btn i {
-        font-size: 15px;
-        padding: 10px 15px;
+        font-size: 10px;
     }
 
-    .progress {
-        margin: 4px auto auto 108px;
-        min-width: 185px;
-        border-radius: 5px;
+    .control-btn__audio {
+        margin-left: -55px;
+    }
+
+    .first-time {
+        margin-left: 115px;
+    }
+
+    .last-time {
+        margin-right: -35px;
     }
 }
 
@@ -89,10 +76,6 @@
         padding: 50px 0;
     }
 
-    .progress {
-        margin: 10px auto auto 102px;
-    }
-
     /*  */
     .control-music {
         height: 80px;
@@ -103,8 +86,16 @@
         font-size: 24px;
     }
 
+    .control-btn {
+        margin-left: 50px;
+    }
+
     .control-btn__audio {
-        height: 25px;
+        margin-left: -80px;
+    }
+
+    .first-time {
+        margin-left: 90px;
     }
 
     .control-thumb {
@@ -124,10 +115,6 @@
             height: 60px;
         }
     }
-
-    .control-body {
-        font-size: 15px;
-    }
 }
 
 /* PC độ phân giải thấp: 1024px - 1239px = 984px. */
@@ -141,8 +128,8 @@
         margin-left: -24px;
     }
 
-    .title-thumb img {
-        animation: fadeIn linear .8s;
+    .title img {
+        animation: fadeIn linear .5s;
         width: 245px;
         height: 245px;
     }
@@ -174,6 +161,7 @@
 
     .control-btn__audio {
         height: 25px;
+        margin-left: -50px;
     }
 
     .control-thumb {
@@ -201,8 +189,24 @@
 
 /* PC độ phân giải cao (dạng mặc định khi chưa tiến hành responsive): 1240px - 1600px = 1440px. */
 /* PC - modern resolution */
-@media (min-width: 1240px) {
+@media (min-width: 1240px)  and (max-width: 1450px){
     .grid {
         width: 1440px;
+    }
+
+    .dashboard {
+        margin: 0 0 0 100px;
+    }
+
+    .title img {
+        animation: fadeIn linear .5s;
+    }
+
+    .right {
+        padding-left: 50px;
+    }
+
+    .control-btn__audio {
+        margin-left: -35px;
     }
 }

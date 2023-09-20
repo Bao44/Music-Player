@@ -7,6 +7,7 @@ const cdThumb = $('.control-thumb')
 const audio = $('#audio')
 const playBtn = $('.btn-toggle-play')
 const playBtn_header = $('.btn__button')
+const play_title = $('.title')
 const player = $('.player')
 const progress = $('.progress')
 const nextBtn = $('.btn-next')
@@ -14,6 +15,8 @@ const prevBtn = $('.btn-prev')
 const randomBtn = $('.btn-random')
 const repeatBtn = $('.btn-repeat')
 const playlist = $('.playlist')
+const firstTime = $('.first-time')
+const lastTime = $('.last-time')
 
 
 const app = {
@@ -24,9 +27,9 @@ const app = {
     songs: [
         {
             name: 'Em của ngày hôm qua',
-            singer: 'MTP',
+            singer: 'Sơn Tùng MTP',
             path: '../assets/music/EmCuaNgayHomQua-SonTungMTP-2882720.mp3',
-            image: '../assets/img/son-tung-mtp.jpg',
+            image: '../assets/img/luffy2.jpg',
             time: '03:45'
         },
         {
@@ -40,58 +43,65 @@ const app = {
             name: 'Không thể say',
             singer: 'HIEUTHUHAI',
             path: '../assets/music/KhongTheSay-HIEUTHUHAI-9293024.mp3',
-            image: '../assets/img/KTS.jpg',
+            image: '../assets/img/zoro1.jpg',
             time: '03:48'
 
         },
         {
-            name: 'LikeCrary',
-            singer: 'Jimin',
-            path: '../assets/music/LikeCrazy-JiminBTS-8899920.mp3',
-            image: '../assets/img/jm.webp',
-            time: '03:32'
+            name: 'Waiting For You',
+            singer: 'Mono',
+            path: '../assets/music/WaitingForYou-MONOOnionn-7733882.mp3',
+            image: '../assets/img/natsu.jpg',
+            time: '04:25'
         },
         {
-            name: 'ShutDown',
-            singer: 'BlackPink',
-            path: '../assets/music/ShutDown-BLACKPINK-7887142.mp3',
-            image: '../assets/img/lb.jpg',
-            time: '02:55'
+            name: 'Muộn rồi mà sao còn',
+            singer: 'Sơn Tùng MTP',
+            path: '../assets/music/MuonRoiMaSaoCon-SonTungMTP-7011803.mp3',
+            image: '../assets/img/luffy1.jpg',
+            time: '04:35'
         },
         {
-            name: 'Gone',
-            singer: 'Rosé',
-            path: '../assets/music/Gone-ROSE-6964052.mp3',
-            image: '../assets/img/ro.jpg',
-            time: '03:27'
+            name: 'Em là kẻ đáng thương',
+            singer: 'Phát Huy T4',
+            path: '../assets/music/EmLaKeDangThuong-PhatHuyT4-8504796.mp3',
+            image: '../assets/img/juvia.jpg',
+            time: '04:18'
         },
         {
             name: 'Ngày mai người ta lấy chồng',
             singer: 'Thành Đạt',
             path: '../assets/music/NgayMaiNguoiTaLayChong-ThanhDat-9466823.mp3',
-            image: '../assets/img/ro.jpg',
+            image: '../assets/img/ngaymailaychong.webp',
             time: '06:01'
         },
         {
             name: 'Nụ Hôn Bisou',
             singer: 'Mikelodic',
             path: '../assets/music/NuHonBisou-Mikelodic-9704760.mp3',
-            image: '../assets/img/ro.jpg',
+            image: '../assets/img/zoro.jpg',
             time: '02:36'
         },
         {
             name: 'Tất cả hoặc không là gì cả',
             singer: 'Thành Đạt',
             path: '../assets/music/TatCaHoacKhongLaGiCaCover-ThanhDat-11527102.mp3',
-            image: '../assets/img/ro.jpg',
+            image: '../assets/img/tatcahoac.jpg',
             time: '06:12'
         },
         {
             name: 'Em là ai',
             singer: 'Keyo',
             path: '../assets/music/EmLaAiDaiMeoRemixSpeedUp-KeyoVietNam-10906100.mp3',
-            image: '../assets/img/ro.jpg',
+            image: '../assets/img/emla.jpg',
             time: '04:55'
+        },
+        {
+            name: 'Bên trên tầng lầu',
+            singer: 'Tăng Duy Tân',
+            path: '../assets/music/BenTrenTangLau-TangDuyTan-7412012.mp3',
+            image: '../assets/img/natsu1.jpg',
+            time: '03:04'
         }
     ],
     render: function () {
@@ -144,6 +154,14 @@ const app = {
         }
 
         playBtn_header.onclick = function () {
+            if (_this.isPlaying) {
+                audio.pause()
+            } else {
+                audio.play()
+            }
+        }
+
+        play_title.onclick = function () {
             if (_this.isPlaying) {
                 audio.pause()
             } else {
@@ -248,6 +266,23 @@ const app = {
 
             }
         }
+
+        // Xử lý thời gian song
+        audio.addEventListener('loadeddata', function() {
+            const minute = Math.floor(audio.duration / 60);
+            var second = Math.floor(audio.duration - minute*60);
+            if (second < 10) {
+                second = '0' + second;
+            }
+            lastTime.innerText = minute + ':' + second;
+        })
+        audio.addEventListener('timeupdate', function() {
+            const curMinute = Math.floor(audio.currentTime / 60);
+            var curSecond = Math.floor(audio.currentTime - curMinute*60);
+            if (curSecond < 10) 
+                curSecond = '0' + curSecond;
+            firstTime.innerText = curMinute + ':' + curSecond;
+        })
     },
     scrollToActiveSong: function () {
         setTimeout(() => {

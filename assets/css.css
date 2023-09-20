@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all 1s ease;
+    transition: all 0.8s ease;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     color: #fff;
@@ -24,7 +24,7 @@ img {
     margin-left: 10px;
 }
 
-/*  */
+/* Thay đổi pause play */
 .player .icon-pause {
     display: none;
 }
@@ -48,6 +48,43 @@ img {
 .playing .button__play {
     display: none;
 }
+
+.player .icon__pause {
+    display: none;
+}
+
+.playing .icon__pause {
+    display: block;
+}
+
+.playing .icon__play {
+    display: none;
+}
+
+/*  */
+
+.title {
+    position: relative;
+}
+
+.title__icon {
+    position: absolute;
+    display: none;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.title:hover .title__icon {
+    display: block;
+    cursor: pointer;
+}
+
+.icon__play,
+.icon__pause {
+    color: #ccc;
+    font-size: 30px;
+} 
 
 /*  */
 .dashboard {
@@ -220,7 +257,15 @@ img {
 }
 
 .control-btn__audio {
-    height: 10px;
+    display: flex;
+}
+
+.control-btn__audio div {
+    margin-top: 3px;
+}
+
+.first-time {
+    margin-left: 115px;
 }
 
 .btn i {
@@ -250,7 +295,8 @@ img {
     width: 60%;
     height: 8px;
     display: flex;
-    margin: 10px auto auto auto;
+    /* margin: 10px auto auto auto; */
+    margin: 10px;
     accent-color: #9B4DE0;
     opacity: 0.6;
 }

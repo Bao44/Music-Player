@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NHẠC CỦA NÍ</title>
+    <link rel="shortcut icon" href="./assets/img/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,6 +21,10 @@
                 <div class="left-content">
                     <div class="title">
                         <img src="/assets/img/lofi-girl-making-beat.jpg" alt="" width="300px" height="300px">
+                        <div class="title__icon">
+                            <i class="fa-regular fa-circle-play icon__play"></i>
+                            <i class="fa-regular fa-circle-pause icon__pause"></i>
+                        </div>
                     </div>
                     <!-- Header -->
                     <header class="header">
@@ -91,8 +96,10 @@
                     </div>
                 </div>
                 <div class="control-btn__audio">
+                    <div class="first-time">00:00</div>
                     <input type="range" value="0" step="1" min="0" max="100" class="progress">
                     <audio src="" id="audio"></audio>
+                    <div class="last-time">00:00</div>
                 </div>
             </div>
         </div>
@@ -101,5 +108,3 @@
 <script src="/assets/js.js"></script>
 
 </html>
-
-
