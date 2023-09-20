@@ -69,8 +69,8 @@ img {
     margin-left: 50px;
     color: white;
 }
-
-.header .button__pause,
+/* Button dạng 1 */
+/* .header .button__pause,
 .header .button__play {
     margin-top: 20px;
     margin-left: 35px;
@@ -82,7 +82,7 @@ img {
     background-color: #9B4DE0;
     border-radius: 12px;
     border: 1px solid #9B4DE0;
-}
+} */
 
 .header .button__pause i,
 .header .button__play i{
@@ -263,3 +263,58 @@ img {
     color: white;
 }
 
+
+
+/* Button dạng 2 */
+.header .button__pause,
+.header .button__play {
+    margin-top: 20px;
+    margin-left: 35px;
+    width: 160px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+}
+
+.button {
+    position: relative;
+    border: 3px ridge #9B4DE0;
+    outline: none;
+    background-color: transparent;
+    transition: 1s;
+    font-weight: bold;
+    border-radius: 20px;
+  }
+  
+  .button::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #170F23;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  
+  .button::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #170F23;
+    transition: 0.5s;
+  }
+  
+  .button:hover::before, .button:hover::after {
+    transform: scale(0)
+  }
+  
+  .button:hover {
+    box-shadow: inset 0px 0px 25px #9B4DE0;
+  }

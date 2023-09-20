@@ -64,6 +64,34 @@ const app = {
             path: '../assets/music/Gone-ROSE-6964052.mp3',
             image: '../assets/img/ro.jpg',
             time: '03:27'
+        },
+        {
+            name: 'Ngày mai người ta lấy chồng',
+            singer: 'Thành Đạt',
+            path: '../assets/music/NgayMaiNguoiTaLayChong-ThanhDat-9466823.mp3',
+            image: '../assets/img/ro.jpg',
+            time: '06:01'
+        },
+        {
+            name: 'Nụ Hôn Bisou',
+            singer: 'Mikelodic',
+            path: '../assets/music/NuHonBisou-Mikelodic-9704760.mp3',
+            image: '../assets/img/ro.jpg',
+            time: '02:36'
+        },
+        {
+            name: 'Tất cả hoặc không là gì cả',
+            singer: 'Thành Đạt',
+            path: '../assets/music/TatCaHoacKhongLaGiCaCover-ThanhDat-11527102.mp3',
+            image: '../assets/img/ro.jpg',
+            time: '06:12'
+        },
+        {
+            name: 'Em là ai',
+            singer: 'Keyo',
+            path: '../assets/music/EmLaAiDaiMeoRemixSpeedUp-KeyoVietNam-10906100.mp3',
+            image: '../assets/img/ro.jpg',
+            time: '04:55'
         }
     ],
     render: function () {
