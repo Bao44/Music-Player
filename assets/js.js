@@ -90,18 +90,46 @@ const app = {
             time: '06:12'
         },
         {
-            name: 'Em là ai',
-            singer: 'Keyo',
-            path: '../assets/music/EmLaAiDaiMeoRemixSpeedUp-KeyoVietNam-10906100.mp3',
-            image: '../assets/img/emla.jpg',
-            time: '04:55'
-        },
-        {
             name: 'Bên trên tầng lầu',
             singer: 'Tăng Duy Tân',
             path: '../assets/music/BenTrenTangLau-TangDuyTan-7412012.mp3',
             image: '../assets/img/natsu1.jpg',
             time: '03:04'
+        },
+        {
+            name: 'Nhờ em nhắn với người đó',
+            singer: 'Tăng Phúc, Tonny Việt',
+            path: '../assets/music/NhoEmNhanVoiNguoiDo-TangPhucTonnyViet-11733135.mp3',
+            image: '../assets/img/conan.jpg',
+            time: '05:17'
+        },
+        {
+            name: 'Thuyền Quyên',
+            singer: 'Diệu Kiên',
+            path: '../assets/music/ThuyenQuyen-DieuKien-7583420.mp3',
+            image: '../assets/img/sasuke1.png',
+            time: '03:13'
+        },
+        {
+            name: 'Lệ Lưu Ly',
+            singer: 'Vũ Phụng Tiên, DT',
+            path: '../assets/music/LeLuuLy-VuPhungTienDT-11753451.mp3',
+            image: '../assets/img/obi.jpg',
+            time: '03:20'
+        },
+        {
+            name: 'Hạt Mưa Vương Vấn',
+            singer: 'Thành Đạt',
+            path: '../assets/music/HatMuaVuongVan-ThanhDat-11684790.mp3',
+            image: '../assets/img/naruto.jpg',
+            time: '04:08'
+        },
+        {
+            name: 'À Lôi',
+            singer: 'Tu Ti, Masew',
+            path: '../assets/music/ALoi-Double2TMasew-10119691.mp3',
+            image: '../assets/img/mina.jpg',
+            time: '03:17'
         }
     ],
     render: function () {
