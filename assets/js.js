@@ -26,11 +26,11 @@ const app = {
     isRepeat: false,
     songs: [
         {
-            name: 'Em của ngày hôm qua',
+            name: 'Theres No One At All',
             singer: 'Sơn Tùng MTP',
-            path: '../assets/music/EmCuaNgayHomQua-SonTungMTP-2882720.mp3',
-            image: '../assets/img/luffy2.jpg',
-            time: '03:45'
+            path: '../assets/music/TheresNoOneAtAll-SonTungMTP-7583837.mp3',
+            image: '../assets/img/mikey1.jpg',
+            time: '02:52'
         },
         {
             name: 'FLOWER',
@@ -69,11 +69,25 @@ const app = {
             time: '04:18'
         },
         {
+            name: 'Như Phút Ban Đầu',
+            singer: 'Noo Phước Thịnh',
+            path: '../assets/music/NhuPhutBanDau-NooPhuocThinh-6458668.mp3',
+            image: '../assets/img/draken.jpg',
+            time: '04:16'
+        },
+        {
             name: 'Ngày mai người ta lấy chồng',
             singer: 'Thành Đạt',
             path: '../assets/music/NgayMaiNguoiTaLayChong-ThanhDat-9466823.mp3',
             image: '../assets/img/ngaymailaychong.webp',
             time: '06:01'
+        },
+        {
+            name: 'Cơn Mưa Ngang Qua',
+            singer: 'Sơn Tùng MTP',
+            path: '../assets/music/ConMuaNgangQua-SonTungMTP-2944936.mp3',
+            image: '../assets/img/deku.png',
+            time: '03:54'
         },
         {
             name: 'Nụ Hôn Bisou',
@@ -97,6 +111,13 @@ const app = {
             time: '03:04'
         },
         {
+            name: 'Em của ngày hôm qua',
+            singer: 'Sơn Tùng MTP',
+            path: '../assets/music/EmCuaNgayHomQua-SonTungMTP-2882720.mp3',
+            image: '../assets/img/luffy2.jpg',
+            time: '03:45'
+        },
+        {
             name: 'Nhờ em nhắn với người đó',
             singer: 'Tăng Phúc, Tonny Việt',
             path: '../assets/music/NhoEmNhanVoiNguoiDo-TangPhucTonnyViet-11733135.mp3',
@@ -118,6 +139,13 @@ const app = {
             time: '03:20'
         },
         {
+            name: 'Nơi Này Có Anh Remix',
+            singer: 'Sơn Tùng MTP',
+            path: '../assets/music/NoiNayCoAnhMasewRemix-SonTungMTP-4816830.mp3',
+            image: '../assets/img/deku1.jpg',
+            time: '04:17'
+        },
+        {
             name: 'Hạt Mưa Vương Vấn',
             singer: 'Thành Đạt',
             path: '../assets/music/HatMuaVuongVan-ThanhDat-11684790.mp3',
@@ -130,6 +158,20 @@ const app = {
             path: '../assets/music/ALoi-Double2TMasew-10119691.mp3',
             image: '../assets/img/mina.jpg',
             time: '03:17'
+        },
+        {
+            name: 'Gạt Đi Nước Mắt',
+            singer: 'Noo Phước Thịnh',
+            path: '../assets/music/GatDiNuocMat-NooPhuocThinhTonnyViet-5893819.mp3',
+            image: '../assets/img/baji.jpg',
+            time: '04:16'
+        },
+        {
+            name: 'Sự Thật Phía Sau Một Lời Hứa',
+            singer: 'Chi Dân',
+            path: '../assets/music/SuThatSauMotLoiHua-ChiDan-3316709.mp3',
+            image: '../assets/img/luabang.jpg',
+            time: '04:55'
         }
     ],
     render: function () {
@@ -224,7 +266,7 @@ const app = {
             const seekTime = audio.duration / 100 * e.target.value
             audio.currentTime = seekTime
         }
-        
+
         // Khi next song
         nextBtn.onclick = function () {
             if (_this.isRandom) {
@@ -296,18 +338,18 @@ const app = {
         }
 
         // Xử lý thời gian song
-        audio.addEventListener('loadeddata', function() {
+        audio.addEventListener('loadeddata', function () {
             const minute = Math.floor(audio.duration / 60);
-            var second = Math.floor(audio.duration - minute*60);
+            var second = Math.floor(audio.duration - minute * 60);
             if (second < 10) {
                 second = '0' + second;
             }
             lastTime.innerText = minute + ':' + second;
         })
-        audio.addEventListener('timeupdate', function() {
+        audio.addEventListener('timeupdate', function () {
             const curMinute = Math.floor(audio.currentTime / 60);
-            var curSecond = Math.floor(audio.currentTime - curMinute*60);
-            if (curSecond < 10) 
+            var curSecond = Math.floor(audio.currentTime - curMinute * 60);
+            if (curSecond < 10)
                 curSecond = '0' + curSecond;
             firstTime.innerText = curMinute + ':' + curSecond;
         })
