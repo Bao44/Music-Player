@@ -128,7 +128,7 @@ const app = {
             name: 'Thuyền Quyên',
             singer: 'Diệu Kiên',
             path: '../assets/music/ThuyenQuyen-DieuKien-7583420.mp3',
-            image: '../assets/img/sasuke1.png',
+            image: '../assets/img/luabang.jpg',
             time: '03:13'
         },
         {
@@ -156,7 +156,7 @@ const app = {
             name: 'À Lôi',
             singer: 'Tu Ti, Masew',
             path: '../assets/music/ALoi-Double2TMasew-10119691.mp3',
-            image: '../assets/img/mina.jpg',
+            image: '../assets/img/luabang1.webp',
             time: '03:17'
         },
         {
@@ -170,8 +170,22 @@ const app = {
             name: 'Sự Thật Phía Sau Một Lời Hứa',
             singer: 'Chi Dân',
             path: '../assets/music/SuThatSauMotLoiHua-ChiDan-3316709.mp3',
-            image: '../assets/img/luabang.jpg',
+            image: '../assets/img/ssk1.jpg',
             time: '04:55'
+        },
+        {
+            name: 'Say Trong Nụ Cười',
+            singer: 'Tăng Duy Tân',
+            path: '../assets/music/SayTrongNuCuoi-TangDuyTan-11998731.mp3',
+            image: '../assets/img/draken1.jpg',
+            time: '04:08'
+        },
+        {
+            name: 'MammaMia',
+            singer: 'HIEUTHUHAI...',
+            path: '../assets/music/MammaMia-HIEUTHUHAIHURRYKNGMANBONegavRex-7288215.mp3',
+            image: '../assets/img/Gray.webp',
+            time: '03:53'
         }
     ],
     render: function () {

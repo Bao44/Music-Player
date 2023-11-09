@@ -283,6 +283,12 @@ img {
     background-color: #3D3837;
 }
 
+.btn:hover .icon-pause,
+.btn:hover .icon-play {
+    color: #9B4DE0;
+    background-color: #130C1C;
+}
+
 .control-thumb {
     background-size: contain;
     width: 80px;
