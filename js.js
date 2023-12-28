@@ -28,8 +28,8 @@ const app = {
         {
             name: 'Theres No One At All',
             singer: 'Sơn Tùng MTP',
-            path: '../assets/music/TheresNoOneAtAll-SonTungMTP-7583837.mp3',
-            image: '../assets/img/mikey1.jpg',
+            path: 'assets/music/TheresNoOneAtAll-SonTungMTP-7583837.mp3',
+            image: 'assets/img/mikey1.jpg',
             time: '02:52'
         },
         {
