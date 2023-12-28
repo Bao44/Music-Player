@@ -35,156 +35,156 @@ const app = {
         {
             name: 'FLOWER',
             singer: 'Jisoo',
-            path: '../assets/music/Flower-JISOO-8949069.mp3',
-            image: '../assets/img/JS.jpg',
+            path: './assets/music/Flower-JISOO-8949069.mp3',
+            image: './assets/img/JS.jpg',
             time: '02:54'
         },
         {
             name: 'Không thể say',
             singer: 'HIEUTHUHAI',
-            path: '../assets/music/KhongTheSay-HIEUTHUHAI-9293024.mp3',
-            image: '../assets/img/zoro1.jpg',
+            path: './assets/music/KhongTheSay-HIEUTHUHAI-9293024.mp3',
+            image: './assets/img/zoro1.jpg',
             time: '03:48'
 
         },
         {
             name: 'Waiting For You',
             singer: 'Mono',
-            path: '../assets/music/WaitingForYou-MONOOnionn-7733882.mp3',
-            image: '../assets/img/natsu.jpg',
+            path: './assets/music/WaitingForYou-MONOOnionn-7733882.mp3',
+            image: './assets/img/natsu.jpg',
             time: '04:25'
         },
         {
             name: 'Muộn rồi mà sao còn',
             singer: 'Sơn Tùng MTP',
-            path: '../assets/music/MuonRoiMaSaoCon-SonTungMTP-7011803.mp3',
-            image: '../assets/img/luffy1.jpg',
+            path: './assets/music/MuonRoiMaSaoCon-SonTungMTP-7011803.mp3',
+            image: './assets/img/luffy1.jpg',
             time: '04:35'
         },
         {
             name: 'Em là kẻ đáng thương',
             singer: 'Phát Huy T4',
-            path: '../assets/music/EmLaKeDangThuong-PhatHuyT4-8504796.mp3',
-            image: '../assets/img/juvia.jpg',
+            path: './assets/music/EmLaKeDangThuong-PhatHuyT4-8504796.mp3',
+            image: './assets/img/juvia.jpg',
             time: '04:18'
         },
         {
             name: 'Như Phút Ban Đầu',
             singer: 'Noo Phước Thịnh',
-            path: '../assets/music/NhuPhutBanDau-NooPhuocThinh-6458668.mp3',
-            image: '../assets/img/draken.jpg',
+            path: './assets/music/NhuPhutBanDau-NooPhuocThinh-6458668.mp3',
+            image: './assets/img/draken.jpg',
             time: '04:16'
         },
         {
             name: 'Ngày mai người ta lấy chồng',
             singer: 'Thành Đạt',
-            path: '../assets/music/NgayMaiNguoiTaLayChong-ThanhDat-9466823.mp3',
-            image: '../assets/img/ngaymailaychong.webp',
+            path: './assets/music/NgayMaiNguoiTaLayChong-ThanhDat-9466823.mp3',
+            image: './assets/img/ngaymailaychong.webp',
             time: '06:01'
         },
         {
             name: 'Cơn Mưa Ngang Qua',
             singer: 'Sơn Tùng MTP',
-            path: '../assets/music/ConMuaNgangQua-SonTungMTP-2944936.mp3',
-            image: '../assets/img/deku.png',
+            path: './assets/music/ConMuaNgangQua-SonTungMTP-2944936.mp3',
+            image: './assets/img/deku.png',
             time: '03:54'
         },
         {
             name: 'Nụ Hôn Bisou',
             singer: 'Mikelodic',
-            path: '../assets/music/NuHonBisou-Mikelodic-9704760.mp3',
-            image: '../assets/img/zoro.jpg',
+            path: './assets/music/NuHonBisou-Mikelodic-9704760.mp3',
+            image: './assets/img/zoro.jpg',
             time: '02:36'
         },
         {
             name: 'Tất cả hoặc không là gì cả',
             singer: 'Thành Đạt',
-            path: '../assets/music/TatCaHoacKhongLaGiCaCover-ThanhDat-11527102.mp3',
-            image: '../assets/img/tatcahoac.jpg',
+            path: './assets/music/TatCaHoacKhongLaGiCaCover-ThanhDat-11527102.mp3',
+            image: './assets/img/tatcahoac.jpg',
             time: '06:12'
         },
         {
             name: 'Bên trên tầng lầu',
             singer: 'Tăng Duy Tân',
-            path: '../assets/music/BenTrenTangLau-TangDuyTan-7412012.mp3',
-            image: '../assets/img/natsu1.jpg',
+            path: './assets/music/BenTrenTangLau-TangDuyTan-7412012.mp3',
+            image: './assets/img/natsu1.jpg',
             time: '03:04'
         },
         {
             name: 'Em của ngày hôm qua',
             singer: 'Sơn Tùng MTP',
-            path: '../assets/music/EmCuaNgayHomQua-SonTungMTP-2882720.mp3',
-            image: '../assets/img/luffy2.jpg',
+            path: './assets/music/EmCuaNgayHomQua-SonTungMTP-2882720.mp3',
+            image: './assets/img/luffy2.jpg',
             time: '03:45'
         },
         {
             name: 'Nhờ em nhắn với người đó',
             singer: 'Tăng Phúc, Tonny Việt',
-            path: '../assets/music/NhoEmNhanVoiNguoiDo-TangPhucTonnyViet-11733135.mp3',
-            image: '../assets/img/conan.jpg',
+            path: './assets/music/NhoEmNhanVoiNguoiDo-TangPhucTonnyViet-11733135.mp3',
+            image: './assets/img/conan.jpg',
             time: '05:17'
         },
         {
             name: 'Thuyền Quyên',
             singer: 'Diệu Kiên',
-            path: '../assets/music/ThuyenQuyen-DieuKien-7583420.mp3',
-            image: '../assets/img/luabang.jpg',
+            path: './assets/music/ThuyenQuyen-DieuKien-7583420.mp3',
+            image: './assets/img/luabang.jpg',
             time: '03:13'
         },
         {
             name: 'Lệ Lưu Ly',
             singer: 'Vũ Phụng Tiên, DT',
-            path: '../assets/music/LeLuuLy-VuPhungTienDT-11753451.mp3',
-            image: '../assets/img/obi.jpg',
+            path: './assets/music/LeLuuLy-VuPhungTienDT-11753451.mp3',
+            image: './assets/img/obi.jpg',
             time: '03:20'
         },
         {
             name: 'Nơi Này Có Anh Remix',
             singer: 'Sơn Tùng MTP',
-            path: '../assets/music/NoiNayCoAnhMasewRemix-SonTungMTP-4816830.mp3',
-            image: '../assets/img/deku1.jpg',
+            path: './assets/music/NoiNayCoAnhMasewRemix-SonTungMTP-4816830.mp3',
+            image: './assets/img/deku1.jpg',
             time: '04:17'
         },
         {
             name: 'Hạt Mưa Vương Vấn',
             singer: 'Thành Đạt',
-            path: '../assets/music/HatMuaVuongVan-ThanhDat-11684790.mp3',
-            image: '../assets/img/naruto.jpg',
+            path: './assets/music/HatMuaVuongVan-ThanhDat-11684790.mp3',
+            image: './assets/img/naruto.jpg',
             time: '04:08'
         },
         {
             name: 'À Lôi',
             singer: 'Tu Ti, Masew',
-            path: '../assets/music/ALoi-Double2TMasew-10119691.mp3',
-            image: '../assets/img/luabang1.webp',
+            path: './assets/music/ALoi-Double2TMasew-10119691.mp3',
+            image: './assets/img/luabang1.webp',
             time: '03:17'
         },
         {
             name: 'Gạt Đi Nước Mắt',
             singer: 'Noo Phước Thịnh',
-            path: '../assets/music/GatDiNuocMat-NooPhuocThinhTonnyViet-5893819.mp3',
-            image: '../assets/img/baji.jpg',
+            path: './assets/music/GatDiNuocMat-NooPhuocThinhTonnyViet-5893819.mp3',
+            image: './assets/img/baji.jpg',
             time: '04:16'
         },
         {
             name: 'Sự Thật Phía Sau Một Lời Hứa',
             singer: 'Chi Dân',
-            path: '../assets/music/SuThatSauMotLoiHua-ChiDan-3316709.mp3',
-            image: '../assets/img/ssk1.jpg',
+            path: './assets/music/SuThatSauMotLoiHua-ChiDan-3316709.mp3',
+            image: './assets/img/ssk1.jpg',
             time: '04:55'
         },
         {
             name: 'Say Trong Nụ Cười',
             singer: 'Tăng Duy Tân',
-            path: '../assets/music/SayTrongNuCuoi-TangDuyTan-11998731.mp3',
-            image: '../assets/img/draken1.jpg',
+            path: './assets/music/SayTrongNuCuoi-TangDuyTan-11998731.mp3',
+            image: './assets/img/draken1.jpg',
             time: '04:08'
         },
         {
             name: 'MammaMia',
             singer: 'HIEUTHUHAI...',
-            path: '../assets/music/MammaMia-HIEUTHUHAIHURRYKNGMANBONegavRex-7288215.mp3',
-            image: '../assets/img/Gray.webp',
+            path: './assets/music/MammaMia-HIEUTHUHAIHURRYKNGMANBONegavRex-7288215.mp3',
+            image: './assets/img/Gray.webp',
             time: '03:53'
         }
     ],
