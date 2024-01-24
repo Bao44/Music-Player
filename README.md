@@ -2,6 +2,6 @@
 
 Giao diện được thiết kế được lấy cảm hứng từ ZingMP3.
 
-[Click vào đây][1] để xem.
+Click vào [đây][1] để xem.
 
 [1]: <https://bao44.github.io/Music-Player/>
